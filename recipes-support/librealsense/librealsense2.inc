@@ -14,10 +14,6 @@ RRECOMMENDS:${PN} += "kernel-module-uvcvideo"
 
 SRC_URI = "git://github.com/IntelRealSense/librealsense.git;protocol=https;branch=master;rev=e196cefa896e312d79c2df400c7623aa1e9c62ac"
 
-SRC_URI += "\
-	file://0001-Enable-riscv-arch-compilation.patch \
-"
-
 S = "${WORKDIR}/git"
 
 EXTRA_OECMAKE = " \
