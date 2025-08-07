@@ -7,12 +7,17 @@ inherit cmake pkgconfig
 
 DEPENDS = "\
     libusb1 \
+    nlohmann-json \
     udev \
 "
 
 RRECOMMENDS:${PN} += "kernel-module-uvcvideo"
 
 SRC_URI = "git://github.com/IntelRealSense/librealsense.git;protocol=https;branch=master;rev=e196cefa896e312d79c2df400c7623aa1e9c62ac"
+
+SRC_URI += "\
+	file://use-provided-json-library.patch \
+"
 
 S = "${WORKDIR}/git"
 

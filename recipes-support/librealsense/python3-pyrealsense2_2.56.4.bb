@@ -11,7 +11,7 @@ DEPENDS += "\
 "
 
 SRC_URI += "\
-    file://Use-provided-pybind11.patch \
+    file://use-provided-pybind11.patch \
 "
 
 EXTRA_OECMAKE += " \

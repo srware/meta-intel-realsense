@@ -14,8 +14,8 @@ RDEPENDS:${PN}-examples += "\
 RDEPENDS:${PN}-examples += "${@bb.utils.contains('DISTRO_FEATURES', 'x11 opengl', 'libgl-mesa', '', d)}"
 
 SRC_URI += "\
-	file://Remove-libusb-from-targets-list.patch \
-	file://Remove-R200-fix-from-udev-rules.patch \
+	file://remove-libusb-from-targets-list.patch \
+	file://remove-R200-fix-from-udev-rules.patch \
 "
 
 PR = "r0"
